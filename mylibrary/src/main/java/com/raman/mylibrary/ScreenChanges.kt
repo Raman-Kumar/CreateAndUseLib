@@ -25,6 +25,7 @@ class ScreenChanges {
 
         // user of this library will call this function and pass context so that it can keep and count
         // use in onCreate of activity only
+        @JvmStatic // extra note :- if using this library in java then, it will avoid writing ScreenChanges.Companion.report(...)
         fun report( context : Context){
             val className = context.javaClass.name
             incrementCount(className, context)
