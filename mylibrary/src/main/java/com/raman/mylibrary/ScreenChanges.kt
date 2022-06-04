@@ -31,7 +31,7 @@ class ScreenChanges {
             incrementCount(className, context)
         }
 
-        // this private function take className and store a count value in storage and then report to a api
+        // this private function take className and store a count value corresponding to the activityClass in storage and then report to a api
         private fun incrementCount(className : String , context : Context) {
             val sp: SharedPreferences = context.getSharedPreferences("thisActivityCount", MODE_PRIVATE)
             val editor = sp.edit()
