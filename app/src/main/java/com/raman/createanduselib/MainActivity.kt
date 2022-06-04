@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        // when Activity starts it reports in onCreate method that it has been accessed
+        ScreenChanges.report(this)
     }
 }
