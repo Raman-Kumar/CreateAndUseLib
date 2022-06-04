@@ -8,7 +8,7 @@ import android.content.SharedPreferences
 This library stores count of activity accessed and in Shared Preferences ( or Sqlite )
 
 How to use it
-In Activity onCreate method call
+apply this code to all Activities of onCreate lifecycle call
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
